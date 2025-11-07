@@ -40,10 +40,10 @@
     "jest": "^27.5.1"
   },
   "jest": {
-    "setupFiles": [
-      "<rootDir>/jest.setup.js"
-    ],
-    "testEnvironment": "jsdom",
-    "testPathIgnorePatterns": ["/test_suites"]
-  }
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest.setup.js"
+  ],
+  "testEnvironment": "jsdom",
+  "testPathIgnorePatterns": ["/test_suites"]
+}
 }
