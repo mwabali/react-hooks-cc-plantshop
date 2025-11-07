@@ -1,9 +1,9 @@
 import React from "react";
 
 function NewPlantForm(onAddPlant) {
-   const [name, setName] = useState("");
-    const [image, setImage] = useState("");
-    const [price, setPrice] = useState("");
+   const [name, setName] = React.useState("");
+    const [image, setImage] = React.useState("");
+    const [price, setPrice] = React.useState("");
   function handleSubmit(e) {
         e.preventDefault();
         
