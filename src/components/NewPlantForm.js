@@ -1,6 +1,6 @@
 import React from "react";
 
-function NewPlantForm(onAddPlant) {
+function NewPlantForm({onAddPlant}) {
    const [name, setName] = React.useState("");
     const [image, setImage] = React.useState("");
     const [price, setPrice] = React.useState("");
@@ -13,12 +13,12 @@ function NewPlantForm(onAddPlant) {
             image: image.trim(),
             price: parseFloat(price),
         };
-        onAddPlant(newPlant)
+     if (typeof onAddPlant === "function") onAddPlant(newPlant);
         setName("");
         setImage("");
         setPrice("");
     }
-
+   
 
 
   return (
