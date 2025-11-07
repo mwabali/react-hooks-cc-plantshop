@@ -40,7 +40,7 @@
     "jest": "^27.5.1"
   },
   "jest": {
-  "setupFilesAfterEnv": [
+  "setupFiles": [
     "<rootDir>/jest.setup.js"
   ],
   "testEnvironment": "jsdom",
