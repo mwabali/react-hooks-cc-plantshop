@@ -1,19 +1,18 @@
 import React from "react";
 
-function Search({search, setSearch}) {
+export default function Search({ search, onSearchChange }) {
   return (
-    <div className="searchbar">
+    <section className="searchbar">
       <label htmlFor="search">Search Plants:</label>
       <input
-        type="text"
         id="search"
+        type="text"
         placeholder="Type a name to search..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
-
+        onChange={(e) => {
+          if (typeof onSearchChange === "function") onSearchChange(e.target.value);
+        }}
       />
-    </div>
+    </section>
   );
 }
-
-export default Search;

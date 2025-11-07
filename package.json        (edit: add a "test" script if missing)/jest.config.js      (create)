@@ -1,0 +1,23 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.0"
+  }
+}
+
+module.exports = {
+  testEnvironment: "node"
+};
+
+const helloWorld = () => {
+  return "Hello, World!";
+};
+
+test('returns Hello, World!', () => {
+  expect(helloWorld()).toBe("Hello, World!");
+});

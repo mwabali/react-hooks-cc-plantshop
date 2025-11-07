@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+
+module.exports = {
+  testEnvironment: "node"
+};
+
+test('hello world!', () => {
+  expect('Hello World').toBe('Hello World');
+});
