@@ -1,4 +1,10 @@
+
+
+
+
 global.fetch = require('node-fetch');
+
+
 
 global.basePlants = [
     {
